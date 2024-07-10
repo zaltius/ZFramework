@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\ZFramework.Application\ZFramework.Application.csproj" />
+    <ProjectReference Include="..\ZSample.Domain\ZSample.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Cliente" Category="EntityType" Annotations="QueryFilter: d =&gt; Not(Convert(d, ISoftDelete).IsDeleted) Relational:TableName: Clientes RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="555.944496103644,334.801221179205,377.543341471354,253.840786450195" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Cliente" Name="Cliente" UseManualLocation="True" />
+    <Node Id="Cliente.Cif" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="575.944503427863,374.80141784668,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Cif" MaxLength="None" Name="Cif" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Cliente.Contactos" Category="Navigation Collection" Bounds="798.201155852993,430.761470336914,88.6866666666665,25.96" Dependent="Contacto" Field="" Inverse="Cliente" Label="Contactos (*)" Name="Contactos" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="IList&lt;Contacto&gt;" />
+    <Node Id="Cliente.CreationTime" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="696.417833912889,542.681895751953,90.5866666666666,25.9599999999998" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="CreationTime" MaxLength="None" Name="CreationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Cliente.DeletionTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="575.944500579556,542.6819076294,90.4733333333334,25.9599999999998" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="DeletionTime" MaxLength="None" Name="DeletionTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Cliente.Direcciones" Category="Navigation Collection" Bounds="817.004504241665,542.681895751953,96.4833333333333,25.9599999999998" Dependent="ClienteDireccion" Field="" Inverse="Cliente" Label="Direcciones (*)" Name="Direcciones" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="IList&lt;ClienteDireccion&gt;" />
+    <Node Id="Cliente.Facturas" Category="Navigation Collection" Bounds="575.944496103644,430.76153137207,78.8599999999999,25.96" Dependent="Factura" Field="" Inverse="Cliente" Label="Facturas (*)" Name="Facturas" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="IList&lt;Factura&gt;" />
+    <Node Id="Cliente.FechaConstitucion" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="575.944696298957,486.72179410401,117.02,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="FechaConstitucion" MaxLength="None" Name="FechaConstitucion" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Cliente.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="655.944503427863,374.801382214361,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Cliente.IsDeleted" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="735.944507089972,374.801356811523,69.5699999999999,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="IsDeleted" MaxLength="None" Name="IsDeleted" PropertyAccessMode="PropertyAccessMode.Default" Type="bool" ValueGenerated="None" />
+    <Node Id="Cliente.LastModificationTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="722.964698740363,486.721782226563,133.61,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="LastModificationTime" MaxLength="None" Name="LastModificationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Cliente.RazonSocial" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="684.804489186327,430.761482214361,83.3966666666665,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="RazonSocial" MaxLength="None" Name="RazonSocial" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="ClienteDireccion" Category="EntityType" Annotations="Relational:TableName: ClientesDirecciones RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="229.915599379249,360.570382687053,246.493707392755,198.51078461914" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="ClienteDireccion" Name="ClienteDireccion" UseManualLocation="True" />
+    <Node Id="ClienteDireccion.Cliente" Category="Navigation Property" Bounds="382.759320068359,512.754723496727,73.65,25.96" Dependent="" Field="" Inverse="Direcciones" Label="Cliente (1)" Name="Cliente" Principal="Cliente" PropertyAccessMode="PropertyAccessMode.Default" Type="Cliente" UseManualLocation="True" />
+    <Node Id="ClienteDireccion.ClienteId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="378.746641438802,456.794594712547,66.9133333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="ClienteId" MaxLength="None" Name="ClienteId" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid?" UseManualLocation="True" ValueGenerated="None" />
+    <Node Id="ClienteDireccion.Direccion" Category="Navigation Property" Bounds="249.915604553223,513.120964951805,86.58,25.96" Dependent="" Field="" Inverse="Clientes" Label="Direccion (1)" Name="Direccion" Principal="Direccion" PropertyAccessMode="PropertyAccessMode.Default" Type="Direccion" UseManualLocation="True" />
+    <Node Id="ClienteDireccion.DireccionId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="251.572908833822,457.160851426414,79.8433333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="DireccionId" MaxLength="None" Name="DireccionId" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" UseManualLocation="True" ValueGenerated="None" />
+    <Node Id="ClienteDireccion.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="321.512573242188,400.570382066063,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" UseManualLocation="True" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Contacto" Category="EntityType" Annotations="QueryFilter: d =&gt; Not(Convert(d, ISoftDelete).IsDeleted) Relational:TableName: Contactos RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="1101.49035100273,96.4867988325567,374.716761067708,253.840658483887" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Contacto" Name="Contacto" UseManualLocation="True" />
+    <Node Id="Contacto.Cliente" Category="Navigation Property" Bounds="1320.64411727878,192.447157316443,73.6500000000001,25.96" Dependent="" Field="" Inverse="Contactos" Label="Cliente (1)" Name="Cliente" Principal="Cliente" PropertyAccessMode="PropertyAccessMode.Default" Type="Cliente" />
+    <Node Id="Contacto.ClienteId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1295.33702906263,136.486898832557,66.9133333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="ClienteId" MaxLength="None" Name="ClienteId" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" ValueGenerated="None" />
+    <Node Id="Contacto.CreationTime" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1241.96374130221,248.407257316443,90.5866666666666,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="CreationTime" MaxLength="None" Name="CreationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Contacto.DeletionTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1121.490378672,248.407257316443,90.4733333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="DeletionTime" MaxLength="None" Name="DeletionTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Contacto.Direccion" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1221.06038518242,192.447157316443,69.5833333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Direccion" MaxLength="None" Name="Direccion" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Contacto.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1121.49035100273,136.486898832557,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Contacto.InitialCreation" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1362.55044540378,248.407619018555,93.6566666666668,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="InitialCreation" MaxLength="None" Name="InitialCreation" PropertyAccessMode="PropertyAccessMode.Default" Type="bool" ValueGenerated="None" />
+    <Node Id="Contacto.IsDeleted" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1121.49038518242,192.447157316443,69.5699999999999,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="IsDeleted" MaxLength="None" Name="IsDeleted" PropertyAccessMode="PropertyAccessMode.Default" Type="bool" ValueGenerated="None" />
+    <Node Id="Contacto.LastModificationTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1121.49052678398,304.367357316444,133.61,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="LastModificationTime" MaxLength="None" Name="LastModificationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Contacto.Nombre" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1201.49035751315,136.486898832557,63.8466666666666,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Nombre" MaxLength="None" Name="Nombre" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Direccion" Category="EntityType" Annotations="Relational:TableName: Direcciones RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="-248.153971303583,332.22381600161,369.56672281901,253.840503295898" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Direccion" Name="Direccion" UseManualLocation="True" />
+    <Node Id="Direccion.Calle" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-228.153955043181,372.223927879057,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Calle" MaxLength="None" Name="Calle" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Direccion.Clientes" Category="Navigation Collection" Bounds="-228.153936936084,428.184056663237,77.2766666666667,25.96" Dependent="ClienteDireccion" Field="" Inverse="Direccion" Label="Clientes (*)" Name="Clientes" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="IList&lt;ClienteDireccion&gt;" />
+    <Node Id="Direccion.CodigoPostal" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-9.147228663786,428.184071922026,90.01,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="CodigoPostal" MaxLength="None" Name="CodigoPostal" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Direccion.CreationTime" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-228.153922897998,484.144170188627,90.5866666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="CreationTime" MaxLength="None" Name="CreationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Direccion.Descripcion" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-120.877239039763,428.184041404448,81.73,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Descripcion" MaxLength="None" Name="Descripcion" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Direccion.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-148.153955043181,372.223958396635,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Direccion.LastModificationTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-228.153939479216,540.104222678862,133.61,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="LastModificationTime" MaxLength="None" Name="LastModificationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Direccion.Poblacion" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="29.7694191837074,372.223958396635,71.6433333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Poblacion" MaxLength="None" Name="Poblacion" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Direccion.Provincia" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-68.1539136409996,372.223927879057,67.9233333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Provincia" MaxLength="None" Name="Provincia" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Direccion.TipoDireccion" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-107.567239039763,484.144139671049,92.86,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="TipoDireccion" MaxLength="None" Name="TipoDireccion" PropertyAccessMode="PropertyAccessMode.Default" Type="TipoDireccionEnum" ValueGenerated="None" />
+    <Node Id="Factura" Category="EntityType" Annotations="" BaseClass="" Bounds="1097.08113062513,534.893487174842,403.716857096354,253.840513525391" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Factura" Name="Factura" UseManualLocation="True" />
+    <Node Id="Factura.BaseImponible" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1117.08116480482,742.773900700233,97.9033333333332,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="BaseImponible" MaxLength="None" Name="BaseImponible" PropertyAccessMode="PropertyAccessMode.Default" Type="decimal" ValueGenerated="None" />
+    <Node Id="Factura.Cliente" Category="Navigation Property" Bounds="1407.14798772148,630.853687174842,73.6500000000001,25.96" Dependent="" Field="" Inverse="Facturas" Label="Cliente (1)" Name="Cliente" Principal="Cliente" PropertyAccessMode="PropertyAccessMode.Default" Type="Cliente" />
+    <Node Id="Factura.ClienteId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1210.66446395846,630.853687174842,66.9133333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="ClienteId" MaxLength="None" Name="ClienteId" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" ValueGenerated="None" />
+    <Node Id="Factura.CreationTime" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1237.55453231784,686.813787174842,90.5866666666666,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="CreationTime" MaxLength="None" Name="CreationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Factura.DeletionTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1117.0811989845,686.813787174842,90.4733333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="DeletionTime" MaxLength="None" Name="DeletionTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Factura.FechaEntrada" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1358.14132186862,686.813787174842,90.9566666666669,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="FechaEntrada" MaxLength="None" Name="FechaEntrada" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Factura.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1117.08117131523,574.893587174842,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="Guid" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Factura.IsDeleted" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1307.57795191419,630.853687174842,69.5700000000002,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="IsDeleted" MaxLength="None" Name="IsDeleted" PropertyAccessMode="PropertyAccessMode.Default" Type="bool" ValueGenerated="None" />
+    <Node Id="Factura.LastModificationTime" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1244.98454533867,742.773900700233,133.61,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="LastModificationTime" MaxLength="None" Name="LastModificationTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime?" ValueGenerated="None" />
+    <Node Id="Factura.Numero" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1117.08113062513,630.853687174842,63.5833333333335,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Numero" MaxLength="None" Name="Numero" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Factura.PctIva" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1357.08117131523,574.893587174842,50.9333333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="PctIva" MaxLength="None" Name="PctIva" PropertyAccessMode="PropertyAccessMode.Default" Type="decimal" ValueGenerated="None" />
+    <Node Id="Factura.Serie" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1197.08117131523,574.893587174842,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Serie" MaxLength="None" Name="Serie" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Factura.Total" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="1277.08117131523,574.893587174842,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Total" MaxLength="None" Name="Total" PropertyAccessMode="PropertyAccessMode.Default" Type="decimal" ValueGenerated="None" />
+    <Node Id="IModel" Category="Model" Annotations="BaseTypeDiscoveryConvention:DerivedTypes: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType]] Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn Relational:MaxIdentifierLength: 63 RelationshipDiscoveryConvention:InverseNavigationCandidates: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.SortedSet`1[System.Type]]" Bounds="-268.153971303583,56.4866988325566,1788.95195902507,752.247401867676" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" Label="ApplicationDbContext" ProductVersion="6.0.1" PropertyAccessMode="PropertyAccessMode.Default" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Cliente" Target="Cliente.Cif" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.Contactos" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.CreationTime" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.DeletionTime" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.Direcciones" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.Facturas" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.FechaConstitucion" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.Id" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.IsDeleted" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.LastModificationTime" Category="Contains" />
+    <Link Source="Cliente" Target="Cliente.RazonSocial" Category="Contains" />
+    <Link Source="ClienteDireccion" Target="Cliente" Category="Foreign Key" Annotations="" Bounds="476.409306772004,460.42251621985,70.535294825037,0.341520427111277" From="ClienteDireccion.ClienteId" IsUnique="False" Label="1:*" LabelBounds="504.649971079109,440.63327643313,14.0733333333332,15.96" Name="ClienteDireccion -&gt; Cliente" To="Cliente.Id" />
+    <Link Source="ClienteDireccion" Target="ClienteDireccion.Cliente" Category="Contains" />
+    <Link Source="ClienteDireccion" Target="ClienteDireccion.ClienteId" Category="Contains" />
+    <Link Source="ClienteDireccion" Target="ClienteDireccion.Direccion" Category="Contains" />
+    <Link Source="ClienteDireccion" Target="ClienteDireccion.DireccionId" Category="Contains" />
+    <Link Source="ClienteDireccion" Target="ClienteDireccion.Id" Category="Contains" />
+    <Link Source="ClienteDireccion" Target="Direccion" Category="Foreign Key" Annotations="" Bounds="130.412739462054,459.461217822592,99.5028599171947,0.16284861080635" From="ClienteDireccion.DireccionId" IsUnique="False" Label="1:*" LabelBounds="173.12422951354,463.542642127999,14.0733333333333,15.96" Name="ClienteDireccion -&gt; Direccion" To="Direccion.Id" />
+    <Link Source="Contacto" Target="Cliente" Category="Foreign Key" Annotations="" Bounds="941.7318259569,305.464735197041,159.758525045833,69.9696605261749" From="Contacto.ClienteId" IsUnique="False" Label="1:*" LabelBounds="1022.41345090398,342.281562878329,14.0733333333329,15.96" Name="Contacto -&gt; Cliente" To="Cliente.Id" />
+    <Link Source="Contacto" Target="Contacto.Cliente" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.ClienteId" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.CreationTime" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.DeletionTime" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.Direccion" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.Id" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.InitialCreation" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.IsDeleted" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.LastModificationTime" Category="Contains" />
+    <Link Source="Contacto" Target="Contacto.Nombre" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.Calle" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.Clientes" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.CodigoPostal" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.CreationTime" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.Descripcion" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.Id" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.LastModificationTime" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.Poblacion" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.Provincia" Category="Contains" />
+    <Link Source="Direccion" Target="Direccion.TipoDireccion" Category="Contains" />
+    <Link Source="Factura" Target="Cliente" Category="Foreign Key" Annotations="" Bounds="941.953037807843,532.930347345659,155.128092817286,56.0061355611904" From="Factura.ClienteId" IsUnique="False" Label="1:*" LabelBounds="1010.65425288849,564.940923271578,14.0733333333332,15.9599999999999" Name="Factura -&gt; Cliente" To="Cliente.Id" />
+    <Link Source="Factura" Target="Factura.BaseImponible" Category="Contains" />
+    <Link Source="Factura" Target="Factura.Cliente" Category="Contains" />
+    <Link Source="Factura" Target="Factura.ClienteId" Category="Contains" />
+    <Link Source="Factura" Target="Factura.CreationTime" Category="Contains" />
+    <Link Source="Factura" Target="Factura.DeletionTime" Category="Contains" />
+    <Link Source="Factura" Target="Factura.FechaEntrada" Category="Contains" />
+    <Link Source="Factura" Target="Factura.Id" Category="Contains" />
+    <Link Source="Factura" Target="Factura.IsDeleted" Category="Contains" />
+    <Link Source="Factura" Target="Factura.LastModificationTime" Category="Contains" />
+    <Link Source="Factura" Target="Factura.Numero" Category="Contains" />
+    <Link Source="Factura" Target="Factura.PctIva" Category="Contains" />
+    <Link Source="Factura" Target="Factura.Serie" Category="Contains" />
+    <Link Source="Factura" Target="Factura.Total" Category="Contains" />
+    <Link Source="IModel" Target="Cliente" Category="Contains" />
+    <Link Source="IModel" Target="ClienteDireccion" Category="Contains" />
+    <Link Source="IModel" Target="Contacto" Category="Contains" />
+    <Link Source="IModel" Target="Direccion" Category="Contains" />
+    <Link Source="IModel" Target="Factura" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contiene" Description="Indica si el origen del vínculo contiene el objeto de destino." CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contenido por" IsContainment="True" OutgoingActionLabel="Contiene" />
+    <Category Id="EntityType" />
+    <Category Id="Foreign Key" />
+    <Category Id="Model" />
+    <Category Id="Navigation Collection" />
+    <Category Id="Navigation Property" />
+    <Category Id="Property Foreign" />
+    <Category Id="Property Optional" />
+    <Category Id="Property Primary" />
+    <Category Id="Property Required" />
+  </Categories>
+  <Properties>
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass" Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Field" Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Grupo" Description="Muestra el nodo como grupo" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsAbstract" Label="IsAbstract" Description="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="Label" Label="Etiqueta" Description="Etiqueta Displayable de un objeto Annotatable." DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="MaxLength" DataType="System.String" />
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type" Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\ZFramework.DependencyInjection.Microsoft\ZFramework.DependencyInjection.Microsoft.csproj" />
+    <ProjectReference Include="..\..\..\framework\ZFramework.Infrastructure.EntityFrameworkCore\ZFramework.Infrastructure.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\ZSample.Domain\ZSample.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

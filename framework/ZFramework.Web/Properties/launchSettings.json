@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ZFramework.Web": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

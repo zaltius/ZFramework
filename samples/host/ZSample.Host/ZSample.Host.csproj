@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\extensions\logging\ZLogging.Serilog\ZLogging.Serilog.csproj" />
+    <ProjectReference Include="..\..\..\framework\extensions\providers\ZInfrastructure.EntityFrameworkCore.PostgreSql\ZInfrastructure.EntityFrameworkCore.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\..\framework\ZFramework.Web\ZFramework.Web.csproj" />
+    <ProjectReference Include="..\..\..\framework\ZFramework.Domain\ZFramework.Domain.csproj" />
+    <ProjectReference Include="..\..\modules\ZSample.Domain\ZSample.Domain.csproj" />
+    <ProjectReference Include="..\..\modules\ZSample.Infrastructure\ZSample.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\modules\ZSamples.Application\ZSample.Application.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
